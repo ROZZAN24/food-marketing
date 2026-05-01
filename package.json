@@ -5,16 +5,16 @@
   "main": "index.js",
   "homepage": ".",
     "scripts": {
-    "vercel-build": "npm cache clean --force && npm install && npm run build",
-    "build": "chmod +x node_modules/.bin/react-scripts && npx react-scripts build",
-    "build:unix": "chmod +x node_modules/.bin/react-scripts && npx react-scripts build"
+    "vercel-build": "npm cache clean --force && rm -rf node_modules && npm install && npm run build",
+    "build": "npx react-scripts build",
+    "prebuild": "npm cache clean --force"
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
   },
   "engines": {
