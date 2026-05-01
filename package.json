@@ -6,8 +6,8 @@
   "homepage": ".",
     "scripts": {
     "vercel-build": "npm cache clean --force && rm -rf node_modules && npm install && npm run build",
-    "build": "npx react-scripts build",
-    "prebuild": "npm cache clean --force"
+    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
+    "build:alt": "node -e \"require('./node_modules/react-scripts/bin/react-scripts.js').run(['build'])\""
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
