@@ -5,10 +5,11 @@
   "main": "index.js",
   "homepage": ".",
   "scripts": {
-    "start": "npx react-scripts start",
-    "build": "npx react-scripts build",
-    "test": "npx react-scripts test",
-    "eject": "npx react-scripts eject"
+    "prebuild": "chmod +x node_modules/.bin/react-scripts",
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
