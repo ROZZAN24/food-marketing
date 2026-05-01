@@ -6,7 +6,7 @@
   "homepage": ".",
     "scripts": {
     "vercel-build": "npm cache clean --force && npm install && npm run build",
-    "build": "react-scripts build"
+    "build": "npx react-scripts build"
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
@@ -17,7 +17,7 @@
     "react-scripts": "5.0.1"
   },
   "engines": {
-    "node": "24.x"
+    "node": "18.x"
   },
   "browserslist": {
     "production": [
