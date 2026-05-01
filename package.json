@@ -4,9 +4,9 @@
   "description": "SAVORA Food Marketing Landing Page",
   "main": "index.js",
   "homepage": ".",
-   "scripts": {
-    "build": "npx --no-install react-scripts build",
-    "start": "react-scripts start"
+    "scripts": {
+    "vercel-build": "npm cache clean --force && npm install && npm run build",
+    "build": "react-scripts build"
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
