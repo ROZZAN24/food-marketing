@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SAVORA Food Marketing Landing Page",
   "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -18,8 +19,7 @@
     "react-scripts": "5.0.1"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+    "node": "18.x"
   },
   "browserslist": {
     "production": [
