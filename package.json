@@ -6,8 +6,9 @@
   "homepage": ".",
     "scripts": {
     "vercel-build": "npm cache clean --force && rm -rf node_modules && npm install && npm run build",
-    "build": "node node_modules/react-scripts/bin/react-scripts.js build",
-    "build:alt": "node -e \"require('./node_modules/react-scripts/bin/react-scripts.js').run(['build'])\""
+    "build": "npm run build:prod",
+    "build:prod": "NODE_ENV=production node node_modules/react-scripts/bin/react-scripts.js build",
+    "build:dev": "NODE_ENV=development node node_modules/react-scripts/bin/react-scripts.js build"
   },
   "keywords": ["react", "landing-page", "food-marketing"],
   "author": "",
